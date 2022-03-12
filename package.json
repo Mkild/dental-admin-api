@@ -14,7 +14,7 @@
   "dependencies": {
     "axios": "^0.21.0",
     "debug": "^4.1.1",
-    "ejs": "^2.3.4",
+    "ejs": "^2.7.4",
     "jsonwebtoken": "^8.5.1",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
