@@ -18,7 +18,7 @@
 >
 > 基于Node.js koa2 的 牙科诊所管理系统 API | Dental Admin API based on koa2
 >
-> 同时使用了：ORM sequelize，路由 koa-router，认证中间件 koa-passport, 日志模块 log4js...
+> 同时使用了：ORM sequelize，路由 koa-router，认证中间件 koa-passport, 日志模块 log4js, 关系型数据库 MySQL...
 
 ## 简介
 
