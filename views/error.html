@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Error Page</title>
+    <link rel="stylesheet" href="/style/error.css" />
+  </head>
+  <body>
+    <div class="error-page">
+      <div class="content" id="content">
+        <h1 data-text="<%= error.status %>"><%= error.status %></h1>
+        <h4 data-text="<%= message %>"><%= message %></h4>
+        <div class="btns">
+          <a href="/">return index</a>
+          <a href="#" id="re">report problem</a>
+        </div>
+      </div>
+      <p id="stack"><%= error.stack %></p>
+      <a id="btn" href="/">return index</a>
+    </div>
+
+    <script type="text/javascript">
+      var repro = document.getElementById('re')
+      var con = document.getElementById('content')
+      var str = document.getElementById('stack')
+      var b = document.getElementById('btn')
+      str.style.display = 'none'
+      b.style.display = 'none'
+
+      repro.onclick = function () {
+        con.style.display = 'none'
+        str.style.display = 'block'
+        b.style.display = 'block'
+      }
+    </script>
+  </body>
+</html>
