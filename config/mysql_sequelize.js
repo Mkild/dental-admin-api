@@ -1,6 +1,6 @@
 //sequelize配置
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('dental_system', 'root', 'wwssaadd', {
+const sequelize = new Sequelize('dental_system', 'root', '123456', {
   host: 'localhost',
   dialect: 'mysql',
   // operatorsAliases:false,

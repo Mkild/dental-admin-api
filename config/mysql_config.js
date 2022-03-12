@@ -1,7 +1,7 @@
 const database = {
   database: 'dental_system',
   user: 'root',
-  password: 'wwssaadd',
+  password: '123456',
   port: '3306',
   host: 'localhost',
 }
