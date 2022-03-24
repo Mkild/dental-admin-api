@@ -16,7 +16,7 @@
 
 > **Dental Admin API 牙科诊所管理系统 API**
 >
-> 基于Node.js koa2 的 牙科诊所管理系统 API | Dental Admin API based on koa2
+> 基于 Node.js koa2 的 牙科诊所管理系统 API | Dental Admin API based on koa2
 >
 > 同时使用了：ORM sequelize，路由 koa-router，认证中间件 koa-passport, 日志模块 log4js, 关系型数据库 MySQL...
 
@@ -47,9 +47,10 @@
 > **前端指路：** [dental-admin](https://github.com/Mkild/dental-admin)
 
 ## 快速启动
-首先确保 [Node.js](https://nodejs.org/en/)  和 [MySQL](https://www.mysql.com/) 已经安装且能正常运行。
 
-作为参考，我的 Node.js 版本是`16.14.0`，MySQL版本是`8.0.22`，其他版本请自行测试。
+首先确保 [Node.js](https://nodejs.org/en/) 和 [MySQL](https://www.mysql.com/) 已经安装且能正常运行。
+
+作为参考，我的 Node.js 版本是`16.14.0`，MySQL 版本是`8.0.22`，其他版本请自行测试。
 
 ```shell
 # 克隆项目
@@ -59,11 +60,12 @@ git clone https://github.com.cnpmjs.org/Mkild/dental-admin-api.git
 git clone https://github.com/Mkild/dental-admin-api.git
 # 进入项目目录
 cd dental-admin-api
-# 安装依赖 
+# 安装依赖
 npm install
 # 修改MySQL配置
 # 修改根目录下config文件夹中的 mysql_config.js 和 mysql_sequelize.js 中的配置
 # 将user、password等修改成你自己MySQL中的user、password等
+# 为方便使用、降低使用门槛才将配置信息保存在项目根目录，请注意保护好自己的配置信息，采用其他方式保管
 # 启动服务 （默认为http://localhost:3000）
 npm run start  / nodemon
 
