@@ -101,8 +101,6 @@ router.post('/charge/delete', authCheck.authCheckDirector)
 /* 收入记录模块 权限验证(director及以上权限放行) */
 // 获取收入记录
 router.get('/income/income', authCheck.authCheckDirector)
-// 获取所有收入记录
-router.get('/income/incomes', authCheck.authCheckDirector)
 // 新增收入记录
 router.post('/income/insert', authCheck.authCheckDirector)
 // 修改收入记录
@@ -115,8 +113,6 @@ router.post('/income/delete', authCheck.authCheckDirector)
 /* 门诊量记录模块 权限验证(doctor及以上权限放行) */
 // 获取门诊量记录
 router.get('/outpatient/outpatient', authCheck.authCheckDoctor)
-// 获取所有门诊量记录
-router.get('/outpatient/outpatients', authCheck.authCheckDoctor)
 // 新增门诊量记录
 router.post('/outpatient/insert', authCheck.authCheckDirector)
 // 修改门诊量记录
